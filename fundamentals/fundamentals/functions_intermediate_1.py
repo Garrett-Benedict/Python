@@ -37,10 +37,10 @@ students = [
         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ] 
-# i = 0
-# for i in range(0,5):
-#     for key in students[i]:
-#         print(students[i][key])
+i = 0
+for i in range(0,5):
+    for key in students[i]:
+        print(students[i][key])
 
 
 students = [
@@ -68,28 +68,3 @@ def printInfo(some_list):
         for j in info_some:
             print(j)
 printInfo(dojo)
-
-
-
-
-
-
-# # output:
-# 7 LOCATIONS
-# San Jose
-# Seattle
-# Dallas
-# Chicago
-# Tulsa
-# DC
-# Burbank
-    
-# 8 INSTRUCTORS
-# Michael
-# Amy
-# Eduardo
-# Josh
-# Graham
-# Patrick
-# Minh
-# Devon
