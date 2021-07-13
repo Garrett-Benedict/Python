@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <style>
+        .color1{
+            background-color: black;
+            height: 30px;
+            width: 30px;
+        }
+        .color2{
+            background-color: red;
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>First</h1>
+    <table>
+        {% for i in range(num) %}
+        <tr>
+            {% for i in range(num) %}
+            <td class = "color1"></td>
+            <td class = "color2"></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for i in range(num) %}
+            <td class = "color2"></td>
+            <td class = "color1"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h1>Second</h1>
+    <table>
+        {% for i in range(num) %}
+        <tr>
+            {% for i in range(numX) %}
+            <td class = "color1"></td>
+            <td class = "color2"></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for i in range(numX) %}
+            <td class = "color2"></td>
+            <td class = "color1"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <h1>Thrid</h1>
+    <table>
+        {% for x in range(num1) %}
+        <tr>
+            {% for y in range(num2) %}
+            <td class = "color1"></td>
+            <td class = "color2"></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for y in range(num2) %}
+            <td class = "color2"></td>
+            <td class = "color1"></td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
