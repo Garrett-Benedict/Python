@@ -17,11 +17,11 @@
 </head>
 <body>
     <div id="container">
-        <h1>{{ name }}</h1>
-        <h2>Dojo Location: {{ loca }}</h2>
-        <h2>Favorite Language: {{ lang }}</h2>
+        <h1>{{ session['name'] }}</h1>
+        <h2>Dojo Location: {{ session['loca'] }}</h2>
+        <h2>Favorite Language: {{ session['lang'] }}</h2>
         <h3>Comments:<br>
-        {{ comm }}</h3>
+        {{ session ['comm'] }}</h3>
         <a href="/">Home</a>
     </div>
 </body>
