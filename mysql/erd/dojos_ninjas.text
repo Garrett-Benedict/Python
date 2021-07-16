@@ -1,0 +1,28 @@
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Brian's Dojo", NOW(), NOW()),
+		("Tom's Dojo", NOW(), NOW()),
+        ("Samantha's Dojo", NOW(), NOW());
+
+DELETE FROM dojos WHERE id;
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Josh's Dojo", NOW(), NOW()),
+		("Tim's Dojo", NOW(), NOW()),
+        ("Sarsh's Dojo", NOW(), NOW());
+        
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES (1,"John", "Madden", "17", NOW(), NOW()),
+		(1, "Mary", "Su", "15", NOW(), NOW()),
+        (1, "Savanah", "Ty", "21", NOW(), NOW()),
+        (2,"Josh", "Ma", "18", NOW(), NOW()),
+		(2, "Mark", "Ficks", "16", NOW(), NOW()),
+		(2, "Jess", "Tyler", "21", NOW(), NOW()),
+        (3,"Gary", "Den", "19", NOW(), NOW()),
+		(3, "Adrien", "Micheal", "15", NOW(), NOW()),
+        (3, "Zach", "Bosh", "23", NOW(), NOW());
+        
+SELECT * FROM ninjas WHERE dojo_id = 1;
+
+SELECT * FROM ninjas WHERE dojo_id = 3;
+
+SELECT dojo_id FROM ninjas WHERE id = 10;
